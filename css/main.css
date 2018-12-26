@@ -17,8 +17,9 @@ a:hover{
 }
 
 .logo-codesai {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  display: flex;
+  margin: 0 auto;
 }
 .twitter-logo,.email-logo{
   width: 20px;
@@ -28,6 +29,7 @@ a:hover{
 .contact{
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
 }
 
 .twitter,.mail{
@@ -39,6 +41,7 @@ a:hover{
 .titles-footer{
   text-align: center;
   padding-bottom: 10px;
+  font-size: 20px;
 }
 
 footer{
@@ -48,4 +51,20 @@ footer{
   flex-direction: column;
   align-items: center;
   padding: 50px;
+}
+
+@media all and (min-width: 768px) {
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .contact{
+    padding-top: 0px;
+  }
+
 }
