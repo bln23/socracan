@@ -20,12 +20,7 @@ header{
 }
 
 .list-header{
-  display: flex;
-  list-style: none;
-}
-
-.items-header{
-  padding: 0 20px 0 20px;
+  display: none;
 }
 
 .logo{
@@ -38,17 +33,14 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  margin: 0 auto;
   width: 100%;
   color: #ffffff;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .text-introduction{
-  height: 400px;
-  width: 500px;
-  text-align: center;
+  font-size: 10px;
 }
 
 .schedule-container{
@@ -205,6 +197,32 @@ footer{
 }
 
 @media all and (min-width: 768px) {
+  .list-header{
+    display: flex;
+    list-style: none;
+  }
+
+  .items-header{
+    padding: 0 20px 0 20px;
+  }
+
+  .introduction{
+    background-image: url(../images/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    color: #ffffff;
+  }
+
+
+  .text-introduction{
+    font-size: 20px;
+    padding: 40px;
+  }
+
+
   footer{
     display: flex;
     flex-direction: row;
