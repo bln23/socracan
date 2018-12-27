@@ -8,6 +8,12 @@ b{
   color: #337ab7;
 }
 
+header{
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+}
+
 .introduction{
   background-image: url(/images/portada.png);
   background-repeat: no-repeat;
@@ -15,6 +21,15 @@ b{
   height: 100vh;
   margin: 0 auto;
   width: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.text-introduction{
+  height: 400px;
+  width: 500px;
+  text-align: center;
 }
 
 .about{
@@ -43,8 +58,8 @@ b{
 }
 
 .container-venue{
-  background-color: #111;
-  color: #dadada;
+  background-color: #ffffff;
+  color: #111;
   text-align: center;
   padding: 40px;
 }
