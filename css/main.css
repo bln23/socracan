@@ -5,6 +5,14 @@
   font-family: 'Thasadith', sans-serif;
 }
 
+h1{
+  font-size: 40px;
+}
+
+.tittle-introduction{
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+}
+
 b{
   color: #337ab7;
 }
@@ -12,7 +20,7 @@ b{
 
 header{
   padding-left: 20px;
-  height: 50px;
+  height: 70px;
   width: 100%;
   background-color: #111;
   color: #ffffff;
@@ -26,8 +34,8 @@ header{
 }
 
 .logo{
-  height: 30px;
-  width: 30px;
+  height: 45px;
+  width: 45px;
 }
 
 .introduction{
