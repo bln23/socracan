@@ -107,6 +107,8 @@ header{
 }
 
 .venue-container{
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   color: #111;
   text-align: center;
@@ -114,18 +116,26 @@ header{
 }
 
 .images-venue{
-  height: 200px;
-  width: 400px;
+  height: 125px;
+  width: 224px;
+  padding: 4px;
+  margin: auto;
 }
 
 .text-venue{
   padding-bottom: 30px;
 }
 
+.images-venue-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .photo{
   background-image: url(../images/foto4.jpg);
   background-repeat: no-repeat;
-  height: 200px;
+  background-size: cover;
+  height: 100vh;
 }
 
 .localitation-container{
@@ -137,7 +147,7 @@ header{
 }
 
 .box-localitation{
-  padding-right: 55px;
+  padding-bottom: 32px;
 }
 
 .title-localitation1{
@@ -221,12 +231,15 @@ footer{
     align-items: flex-start;
   }
 
-
   .text-introduction{
     font-size: 20px;
     padding: 40px;
   }
 
+  iframe{
+    width: 500px;
+    height: 250px;
+  }
 
   footer{
     display: flex;
@@ -257,5 +270,22 @@ footer{
   .list-about{
     display: flex;
     flex-direction: row;
+  }
+
+  .images-venue{
+    height: 200px;
+    width: 400px;
+  }
+
+  .images-venue-container{
+    flex-direction: row;
+  }
+
+  .box-localitation {
+    padding-right: 55px;
+  }
+
+  .photo{
+    height: 200px;
   }
 }
