@@ -74,9 +74,6 @@ header {
   color: #111;
   margin: 0 auto;
   background-color: #eeeeee;
-
-}
-.box-schedule{
   margin: 0 auto;
   padding: 50px;
 }
@@ -96,7 +93,7 @@ header {
   font-size: 14px;
 }
 
-.about-container{
+#about {
   background-image: url(../images/image-about-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -123,7 +120,7 @@ header {
   padding-bottom: 16px;
 }
 
-.venue-container{
+#venue {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -249,7 +246,7 @@ footer{
     padding: 40px;
   }
 
-  .about-container{
+  #about {
     background-image: url(../images/image-section-about.png);
     background-repeat: no-repeat;
     padding: 25px;
@@ -289,6 +286,7 @@ footer{
   iframe{
     width: 500px;
     height: 250px;
+    border:0;
   }
 
   footer{
