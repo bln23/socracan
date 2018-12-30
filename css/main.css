@@ -286,15 +286,13 @@ footer{
   iframe{
     width: 500px;
     height: 250px;
-    border:0;
+    border: 0;
   }
 
   footer{
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 50px;
     padding-bottom: 33px;
   }
 
