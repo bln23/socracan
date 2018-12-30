@@ -151,8 +151,8 @@ header {
 }
 
 .images-venue{
-  height: 125px;
-  width: 224px;
+  width: 300px;
+  height: 150px;
   padding: 10px;
 }
 
@@ -283,8 +283,8 @@ footer > div:not(:first-child) {
   }
 
   .images-venue{
-    height: 200px;
-    width: 400px;
+    width: 500px;
+    height: 250px;
   }
 
   .images-venue-container{
