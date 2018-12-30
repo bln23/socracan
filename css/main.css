@@ -17,7 +17,6 @@ a {
   text-decoration: none;
   transition: color 0.4s ease;
   color: #ffcd05;
-  padding-left: 7px;
   font-size: 16px;
 }
 
@@ -26,24 +25,19 @@ a:hover{
   cursor: pointer;
 }
 
-b{
+b {
   color: #337ab7;
 }
 
-
-header{
-  padding-left: 20px;
+header {
   height: 70px;
   width: 100%;
+  padding: 0 24px;
   background-color: #111;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.title-introduction{
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
 }
 
 .list-header{
@@ -55,7 +49,7 @@ header{
   width: 45px;
 }
 
-.introduction{
+.introduction {
   background-image: url(../images/portada.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,6 +61,10 @@ header{
   align-items: flex-end;
 }
 
+.title-introduction {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+}
+
 .text-introduction{
   font-size: 10px;
 }
@@ -74,14 +72,12 @@ header{
 .schedule-container{
   text-align: center;
   color: #111;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   background-color: #eeeeee;
 
 }
 .box-schedule{
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding: 50px;
 }
 
@@ -90,19 +86,14 @@ header{
   font-size: 35px;
 }
 
-.list-group-items{
+.schedule-item{
   position: relative;
-    display: block;
-    padding: 15px 15px;
-    margin-bottom: -1px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    font-size: 14px;
-}
-
-.list-group-item:first-child {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  display: block;
+  padding: 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 14px;
 }
 
 .about-container{
@@ -141,14 +132,14 @@ header{
   padding: 40px;
 }
 
+.text-venue{
+  padding-bottom: 30px;
+}
+
 .images-venue{
   height: 125px;
   width: 224px;
   padding: 10px;
-}
-
-.text-venue{
-  padding-bottom: 30px;
 }
 
 .images-venue-container{
@@ -187,26 +178,13 @@ header{
   padding-bottom: 15px;
 }
 
-.logo-codesai {
-  width: 100px;
-  display: flex;
-  margin: 0 auto;
-}
-.twitter-logo,.email-logo{
-  width: 20px;
-  height: 20px;
-}
-
-.contact{
+footer{
+  background-color: #111;
+  color: white;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-}
-
-.twitter,.mail{
-  display: flex;
   align-items: center;
-  padding-top: 12px;
+  padding: 50px;
 }
 
 .titles-footer{
@@ -215,13 +193,31 @@ header{
   font-size: 18px;
 }
 
-footer{
-  background-color: #111;
-  color: white;
+.logo-codesai {
+  width: 100px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.contact-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.contact {
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
+}
+
+.contact a {
+  padding-left: 7px;
+}
+
+.contact > div {
+  display: flex;
   align-items: center;
-  padding: 50px;
+  padding-top: 12px;
 }
 
 @media all and (min-width: 768px) {
@@ -235,55 +231,21 @@ footer{
     font-size: 25px;
   }
 
-
   .list-header{
     display: flex;
     list-style: none;
   }
 
   .items-header{
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
   }
 
   .introduction{
-    background-image: url(../images/portada.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    margin: 0 auto;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
     align-items: flex-start;
   }
 
   .text-introduction{
     font-size: 20px;
-    padding: 40px;
-  }
-
-  iframe{
-    width: 500px;
-    height: 250px;
-  }
-
-  footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 33px;
-  }
-
-  .contact{
-    padding-top: 0px;
-  }
-
-  .localitation-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 40px;
   }
 
@@ -313,7 +275,32 @@ footer{
     justify-content: center;
   }
 
+  .localitation-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+  }
+
   .box-localitation {
     padding-right: 55px;
+  }
+
+  iframe{
+    width: 500px;
+    height: 250px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 33px;
+  }
+
+  .contact{
+    padding-top: 0px;
   }
 }
