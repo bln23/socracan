@@ -141,10 +141,6 @@ header {
   padding: 40px;
 }
 
-.text-venue{
-  padding-bottom: 30px;
-}
-
 .images-venue{
   height: 125px;
   width: 224px;
@@ -189,8 +185,11 @@ footer{
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 50px;
+}
+
+footer > div:not(:first-child) {
+  padding-top: 32px;
 }
 
 .titles-footer{
@@ -205,6 +204,24 @@ footer{
   margin: 0 auto;
 }
 
+.facilitator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facilitator a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facilitator img {
+  width: 80px;
+  border-radius: 100%;
+  margin: 12px auto;
+}
+
 .contact-logo {
   width: 20px;
   height: 20px;
@@ -213,7 +230,7 @@ footer{
 .contact {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  align-items: center;
 }
 
 .contact a {
@@ -296,7 +313,6 @@ footer{
   footer{
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     padding-bottom: 33px;
   }
 
