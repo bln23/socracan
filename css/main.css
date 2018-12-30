@@ -58,39 +58,19 @@ header {
   width: 100%;
   color: #ffffff;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .title-introduction {
+  padding: 19px 0 0 25px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
 }
 
-.text-introduction{
-  font-size: 10px;
-}
-
-.schedule-container{
+.text-intro{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
   text-align: center;
-  color: #111;
-  margin: 0 auto;
-  background-color: #eeeeee;
-  margin: 0 auto;
-  padding: 50px;
-}
-
-.title-schedule{
-  padding-bottom: 35px;
-  font-size: 35px;
-}
-
-.schedule-item{
-  position: relative;
-  display: block;
-  padding: 15px;
-  margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  font-size: 14px;
 }
 
 #about {
@@ -120,6 +100,38 @@ header {
   padding-bottom: 16px;
 }
 
+.schedule-container{
+  text-align: center;
+  color: #111;
+  margin: 0 auto;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.title-schedule{
+  padding-bottom: 35px;
+  font-size: 35px;
+}
+
+.schedule-item{
+  position: relative;
+  display: block;
+  padding: 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.photo{
+  background-image: url(../images/foto4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
 #venue {
   display: flex;
   flex-direction: column;
@@ -145,12 +157,9 @@ header {
   align-items: center;
 }
 
-.photo{
-  background-image: url(../images/foto4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 200px;
+.tickets {
+  background-color: #222324;
+  color: #ffffff;
 }
 
 .localitation-container{
@@ -237,12 +246,7 @@ footer{
     padding: 0 20px;
   }
 
-  .introduction{
-    align-items: flex-start;
-  }
-
-  .text-introduction{
-    font-size: 20px;
+  .title-introduction{
     padding: 40px;
   }
 
