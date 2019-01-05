@@ -31,23 +31,51 @@ section > h2 {
 }
 
 header {
-  height: 70px;
+  height: 76px;
   width: 100%;
-  padding: 0 24px;
+  padding: 10px 27px;
   background-color: #111;
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  transition: 0.5s height;
+}
+
+header.expanded {
+  height: 195px;
+  transition: 0.5s height;
+}
+
+header.expanded .logo-container {
+  border-color: #797979;
+}
+
+header:not(.expanded) .list-header {
+  display: none;
 }
 
 .list-header{
-  display: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.items-header{
+  padding: 9px 20px;
 }
 
 .logo{
   height: 45px;
   width: 45px;
+}
+
+.logo-container {
+  height: 56px;
+  border-bottom: 1px solid #111;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .introduction {
@@ -252,14 +280,24 @@ footer > div:not(:first-child) {
 }
 
 @media all and (min-width: 768px) {
+  header{
+    height: 76px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
   section > h2 {
     font-size: 30px;
     padding: 20px 0;
   }
 
   .list-header{
-    display: flex;
-    list-style: none;
+    flex-direction: row;
+    border: none;
   }
 
   .items-header{
