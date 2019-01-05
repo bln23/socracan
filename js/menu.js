@@ -5,4 +5,9 @@
     e.preventDefault();
     header.classList.toggle('expanded');
   });
+  document.querySelectorAll('header li').forEach(e => {
+    e.addEventListener('click', () => {
+      header.classList.remove('expanded');
+    });
+  });
 }());
