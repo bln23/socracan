@@ -55,6 +55,17 @@ header:not(.expanded) .list-header {
   display: none;
 }
 
+#toggle {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border-color: #ffffff;
+  background-color: #111;
+  background-image: url(../images/hamburger-icon.png);
+  background-size: contain;
+}
+
 .list-header{
   display: flex;
   flex-direction: column;
@@ -76,6 +87,7 @@ header:not(.expanded) .list-header {
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .introduction {
@@ -289,15 +301,19 @@ footer > div:not(:first-child) {
     align-items: center;
   }
 
-
   section > h2 {
     font-size: 30px;
     padding: 20px 0;
   }
 
-  .list-header{
-    flex-direction: row;
+  #toggle {
+    display: none;
+  }
+
+  header .list-header {
     border: none;
+    display: flex !important;
+    flex-direction: row;
   }
 
   .items-header{
